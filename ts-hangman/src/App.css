@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+   
+#root {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: center;
+}
+
+.hangman-draw-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.hangman-draw-container h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hangman-draw-container h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.hangman-word-container {
+  display: flex;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+
+.hangman-word-container span {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.hangman-word-visibile {
+  visibility: visible;
+}
+
+.hangman-word-hidden {
+  visibility: hidden;
+}
+
+.hangman-word-bottom-border-red {
+  border-bottom: .1em solid red;
+}
+
+.hangman-word-bottom-border-black {
+  border-bottom: .1em solid black;
+}
+
+.hangman-container {
+  position: relative;
+  min-width: 500px;
+  min-height: 300px;
+}
+
+.keyboard-container {
+  position: relative;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(50px, 1fr));
+  gap: 1.5rem;
+}
+
+.btn 
+{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+  color: black;
+  background-color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn.inactive {
+  opacity: .4;
+  cursor: not-allowed;
+
+
+}
+
+.btn.active {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  background-color: hsl(200, 100%, 70%);
+
+}
+
+
+.head_style {
+  position : absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: black;
+  border: 10px  solid black;
+  top: 50px;
+  right: -20px;
+}
+
+.body_style {
+      width: 10px;
+      height: 100px;
+      background: black;
+      position: absolute;
+      top: 100px;
+      right: 0;
+}
+
+.right_arm_style {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background:black;
+  top: 150px;
+  rotate: -30deg;
+  transform-origin: left bottom;
+  left:500px;
+
+}
+
+.left_arm_style {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background: black;
+    transform-origin: right bottom;
+    top: 150px;
+    rotate: 30deg;
+    right: 0px;
+}
+
+.right_foot_style {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background: black;
+  top: 200px;
+  rotate: 60deg;
+  transform-origin: left top;
+  right: -100px;
+}
+
+.left_foot_style {
+  position:absolute;
+  width:100px;
+  height: 10px;
+  background: black;
+  transform-origin: right top;
+  top: 200px;
+  right: 10px;
+  rotate: -60deg;
+}
+
+.h_comp_1 {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: black;
+  top: 0;
+  right: 0;
+}
+
+.h_comp_2 {
+  position: absolute;
+  width: 240px;
+  height: 10px;
+  top: 0;
+  right:0;
+  background: black;
+}
+
+.h_comp_3 {
+  position: absolute;
+  width: 10px;
+  height: 250px;
+  background: black;
+  left: 50%;
+}
+
+.replay-container {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  opacity: 0.8;
+  background-color: gray;
+}
+
+.replay {
+  width: auto;
+  height: 10vh;
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
