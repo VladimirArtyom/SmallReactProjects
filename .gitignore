@@ -1,1 +1,4 @@
 *.py
+*.tflite
+*.h5
+frozen/
