@@ -10,5 +10,4 @@ function Title( props :TitleTypeProps) {
     </div>
   )
 }
-
 export default Title;

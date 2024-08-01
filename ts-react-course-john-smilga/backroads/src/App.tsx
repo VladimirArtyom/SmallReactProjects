@@ -1,6 +1,7 @@
 import Services from "./components/Services"
 import Tours  from "./components/Tours"
 import Footer from "./components/Footer"
+import About from "./components/About"
 import { services } from "./data"
 import { tours } from "./data"
 import { pageLinks, copyright_text, socialLinks} from "./data"
@@ -36,6 +37,7 @@ function App() {
   })
   return (
     <>
+      <About />
       <Services services={services}/>
       <Tours tours={tours}/>
       <Footer pp_link_props={pp_link_props}
