@@ -2,6 +2,7 @@ import Services from "./components/Services"
 import Tours  from "./components/Tours"
 import Footer from "./components/Footer"
 import About from "./components/About"
+import Home from "./components/Home"
 import { services } from "./data"
 import { tours } from "./data"
 import { pageLinks, copyright_text, socialLinks} from "./data"
@@ -37,6 +38,7 @@ function App() {
   })
   return (
     <>
+      <Home />
       <About />
       <Services services={services}/>
       <Tours tours={tours}/>

@@ -190,8 +190,74 @@ p {
 }
 
 
-/* About start */ 
 
+/* Nav Start */
+
+/* Nav End */
+
+
+/* Home start */ 
+
+
+
+/* Home End */ 
+.hero {
+  min-height: 100vh;
+  background: var(--clr-primary-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  color: var(--clr-white);
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+
+}
+
+.hero-banner p {
+  color: inherit;
+  letter-spacing: var(--spacing);
+  max-width: 35rem;
+}
+
+.hero-btn {
+  padding: 1rem 1.5rem;
+  color: var(--clr-primary-5);
+  background-color: white;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.hero-btn:hover {
+  color: white;
+  background: transparent;
+  border: 2px solid var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+        background: linear-gradient(rgb(44, 174, 186, 0.5), rgba(0, 0, 0, 0.7)),
+      url('./images/main.jpeg') center/cover no-repeat 
+  }
+
+  .hero-banner {
+    padding: 0;
+  }
+
+  .hero-banner p {
+    max-width: 45rem;
+  }
+
+}
+/* About start */ 
 
 .about-img, 
 .about-info {
